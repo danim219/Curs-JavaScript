@@ -23,4 +23,4 @@ console.log(person.friends);
 
 console.log('Ma numesc ' + person.name + ' si stiu html si css.');
 console.log('Sunt ' + person.name + ' si acum invat JS');
-console.log('Am 3 prieteni: ' + ' person.friends.name')
+console.log('Am ' + person.friends.length + ' prieteni: ' +  person.friends[0].name + person.friends[1].name + person.friends[2].name );
