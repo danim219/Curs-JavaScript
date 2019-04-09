@@ -10,3 +10,10 @@ console.log(
 
 var exactTime = new Date().getHours() + ' : ' +
 new Date().getMinutes();
+
+console.log('                ')
+
+function getTime() {
+    return new Date().getHours()
+  }
+console.log(getTime())
