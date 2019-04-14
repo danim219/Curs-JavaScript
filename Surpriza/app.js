@@ -45,6 +45,6 @@ var inputlimbasiLiteraturaRomana = document.getElementById('limbasiLiteraturaRom
       elementResult.innerText =result;
 
       if (result > 8.5)
-      alert ('Felicitari, ati obtinut medie de buresa!')
+      alert ('Felicitari, ati obtinut medie de buresa!') 
       e.preventDefault();
     }, false);
