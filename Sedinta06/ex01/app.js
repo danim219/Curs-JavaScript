@@ -5,8 +5,29 @@ var car = {
         speed: 120,
         topSpeed: 280,
         topReverseSpeed: -70,
+        isTrunkOpen:  false,
+        areLightsOn: false,
+    openTruck: function () {
+        this.istrunkOpen = true;
+        },
+    closeTruck: function () {
+        this.istrunkClose = false;
+        },
+    turnLightsOn: function() {
+        this.isturnLightsOn = true;
+    },        
+    turnLightsOff: function() {
+        this.isturnLightsOn = false;
+    },       
     accelerate: function() {
         this.speed++;   
+    },
+    flashlLights: function (){
+        var self = this
+        self.openLightsOn
+        window.setTimeout(function(){
+            self.turnLightsOff;
+        }) 
     },
     decelerate: function() {
         this.speed--;
@@ -17,10 +38,11 @@ var car = {
     setSpeed: function (s) {
         if ( s > car.topSpeed){
         car.speed = car.topSpeed;
-    }
+    },
         if ( s < car.topReverseSpeed){
         car.speed = car.topReverseSpeed;
         }
+       
     }
 };
 
