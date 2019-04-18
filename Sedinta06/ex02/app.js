@@ -1,7 +1,7 @@
 var paragraphElement = document.createElement('p'),
     userAgentStrig = navigator.userAgent,
     message = 'Nu stim ce browser folosesti.';
-    
+
 if (userAgentStrig.indexOf('Chrome') >= 0) {
     message = 'Navighezi folosind Chrome';
 }
@@ -24,7 +24,7 @@ document.body.appendChild(paragraphElement);
 
 
 
- var x = paragraphElement;
-    window.setTimeout(function(){ 
+var x = paragraphElement;
+window.setTimeout(function () {
     x.remove();
-     }, 1000);
+}, 1000);
