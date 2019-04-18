@@ -2,7 +2,7 @@ var paragraphElement = document.createElement('p'),
     userAgentStrig = navigator.userAgent,
     message = 'Nu stim ce browser folosesti.';
     
-if (userAgentStrig.indexOf('chrome') >= 0) {
+if (userAgentStrig.indexOf('Chrome') >= 0) {
     message = 'Navighezi folosind Chrome';
 }
 else if (userAgentStrig.indexOf('Firefox') >= 0) {
@@ -15,9 +15,16 @@ paragraphElement.innerText = message;
 
 document.body.appendChild(paragraphElement);
 
-function myRemove() {
-    var x = paragraphElement
-window.setTimeout(function(){ 
-     remove(x);
-}, 5000);
-}
+// function myRemove() {
+//     var x = paragraphElement;
+// window.setTimeout(function(){ 
+//      x.remove();
+// }, 500);
+// }
+
+
+
+ var x = paragraphElement;
+    window.setTimeout(function(){ 
+    x.remove();
+     }, 1000);
