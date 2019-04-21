@@ -15,7 +15,6 @@ var inputlimbasiLiteraturaRomana = document.getElementById('limbasiLiteraturaRom
     inputinformatica = document.getElementById('informatica'),
     inputtic = document.getElementById('tic'),
     inputantreprenoriala = document.getElementById('antreprenoriala'),
-
     elementResult = document.getElementById('result'),
     form = document.querySelector('form');
 
@@ -47,4 +46,6 @@ var inputlimbasiLiteraturaRomana = document.getElementById('limbasiLiteraturaRom
       if (result > 8.5)
       alert ('Felicitari, ati obtinut medie de buresa!') 
       e.preventDefault();
+      form.addEventListener('submit')
     }, false);
+<button onclick="window.location.href='/page2'">Continue</button>
